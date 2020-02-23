@@ -45,7 +45,7 @@ private:
 		}
 		else {
 			do y = y->getPadre();
-			while (y && y->getKey() < x);
+			while (y && y->getKey() <= x);
 			if (y) return y;
 			return NULL;
 		}
